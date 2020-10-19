@@ -11,10 +11,17 @@ template <class t> struct Vec2 {
 	Vec2(): x(t()), y(t()) {}
 	Vec2(t _x, t _y): x(_x), y(_y) {}
 	Vec2<t>(const Vec2<t> &v): x(t()), y(t()) {*this = v;}
+	Vec2<t> & operator =(const Vec2<t> &v) {
+		if (this != &v) {
+			x = v.x;
+			y = v.y;
+		}
+		return *this;
+	}
 
-	inline Vec2<t> operator +(const Vec2<t> &V) const {return Vec2<t>(u+V.u, v+V.v);}
-	inline Vec2<t> operator -(const Vec2<t> &V) const {return Vec2<t>(u-V.u, v-V.v);}
-	inline Vec2<t> operator *(float f) 			const {return Vec2<t>(u*f, v*f);}
+	Vec2<t> operator +(const Vec2<t> &V) const {return Vec2<t>(x+V.x, y+V.y);}
+	Vec2<t> operator -(const Vec2<t> &V) const {return Vec2<t>(u-V.u, v-V.v);}
+	Vec2<t> operator *(float f) 			const {return Vec2<t>(u*f, v*f);}
 	template <class > friend std::ostream& operator<<(std::ostream& s, Vec2<t>& v);
 };
 
