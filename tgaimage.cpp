@@ -45,7 +45,7 @@ bool TGAImage::read_tga_file(const char *filename) {
 	std::ifstream in;
 	in.open(filename, std::ios::binary);
 	if (!in.is_open()) {
-		std::cerr << "can't open file" << filename << "\n";
+		std::cerr << "can't open file " << filename << "\n";
 		in.close();
 		return false;
 	}
@@ -58,7 +58,7 @@ bool TGAImage::read_tga_file(const char *filename) {
 	}
 	width = header.width;
 	height = header.height;
-	bytespp = header.bitsperpixel;
+	bytespp = header.bitsperpixel >> 3;
 	if (width <= 0 || height <= 0 || (bytespp != GRAYSCALE && bytespp != RGB && bytespp !=RGBA)) {
 		in.close();
 		std::cerr << "bad bpp (or width/height) value\n";
