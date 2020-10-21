@@ -13,10 +13,7 @@ TGAImage::TGAImage(int w, int h, int bpp): data(NULL), width(w), height(h), byte
 	memset(data, 0, nbytes);
 }
 
-TGAImage::TGAImage(const TGAImage &img) {
-	width = img.width;
-	height = img.height;
-	bytespp = img.bytespp;
+TGAImage::TGAImage(const TGAImage &img): data(NULL), width(img.width), height(img.height), bytespp(img.bytespp) {
 	unsigned long nbytes = width*height*bytespp;
 	data = new unsigned char[nbytes];
 	memcpy(data, img.data, nbytes);
@@ -92,7 +89,7 @@ bool TGAImage::read_tga_file(const char *filename) {
 	if (header.imagedescriptor & 0x10) {
 		flip_horizontally();
 	}
-	std::cerr << width << "x" << height << "/" << bytespp*8 << "/n";
+	std::cerr << width << "x" << height << "/" << bytespp*8 << "\n";
 	in.close();
 	return true;
 }
@@ -113,13 +110,13 @@ bool TGAImage::load_rle_data(std::ifstream &in) {
 		if (chunkheader < 128) {
 			chunkheader++;
 			for (int i = 0; i < chunkheader; i++) {
-				in.read((char *)colorbuffer.raw, bytespp);
+				in.read((char *)colorbuffer.bgra, bytespp);
 				if (!in.good()) {
 					std::cerr << "an error occured while reading the header\n";
 					return false;
 				}
 				for (int t = 0; t < bytespp; t++)
-					data[currentbyte++] = colorbuffer.raw[t];
+					data[currentbyte++] = colorbuffer.bgra[t];
 				currentpixel++;
 				if (currentpixel > pixelcount) {
 					std::cerr << "Too maney pixels read\n";
@@ -129,14 +126,14 @@ bool TGAImage::load_rle_data(std::ifstream &in) {
 		}
 		else {
 			chunkheader -= 127;
-			in.read((char *)colorbuffer.raw, bytespp);
+			in.read((char *)colorbuffer.bgra, bytespp);
 			if (!in.good()) {
 				std::cerr << "an error occured while reading the header\n";
 				return false;
 			}
 			for (int i = 0; i < chunkheader; i++) {
 				for (int t = 0; t < bytespp; t++) 
-					data[currentbyte++] = colorbuffer.raw[t];
+					data[currentbyte++] = colorbuffer.bgra[t];
 				currentpixel++;
 				if (currentpixel > pixelcount) {
 					std::cerr << "Too maney pixels read\n";
@@ -175,7 +172,7 @@ bool TGAImage::write_tga_file(const char *filename, bool rle) {
 	if (!rle) {
 		out.write((char *)data, width*height*bytespp);
 		if (!out.good()) {
-			std::cerr << "can't unload raw data\n";
+			std::cerr << "can't unload bgra data\n";
 			out.close();
 			return false;
 		}
@@ -183,7 +180,7 @@ bool TGAImage::write_tga_file(const char *filename, bool rle) {
 	else {
 		if (!unload_rle_data(out)) {
 			out.close();
-			std::cerr << "can't unload raw data\n";
+			std::cerr << "can't unload bgra data\n";
 			return false;
 		}
 	}
@@ -217,31 +214,31 @@ bool TGAImage::unload_rle_data(std::ofstream &out) {
 	while (curpix < npixels) {
 		unsigned long chunkstart = curpix * bytespp;
 		unsigned long curbyte = curpix * bytespp;
-		unsigned long run_length = 1;
-		bool raw = true;
+		unsigned char run_length = 1;
+		bool bgra = true;
 		while (curpix + run_length < npixels && run_length < max_chunk_length) {
 			bool succ_eq = true;
 			for (int t = 0; succ_eq && t < bytespp; t++)
 				succ_eq = (data[curbyte+t] == data[curbyte + t + bytespp]);
 			curbyte += bytespp;
 			if (1 == run_length) 
-				raw = !succ_eq;
-			if (raw && succ_eq) {
+				bgra = !succ_eq;
+			if (bgra && succ_eq) {
 				run_length--;
 				break;
 			}
-			if (!raw && !succ_eq)
+			if (!bgra && !succ_eq)
 				break;
 
 			run_length++;
 		}
 		curpix += run_length;
-		out.put(raw ? run_length-1:run_length+127);
+		out.put(bgra ? run_length-1:run_length+127);
 		if (!out.good()) {
 			std::cerr << "can't dump the tga file\n";
 			return false;
 		}
-		out.write((char *)(data+chunkstart), (raw ? run_length*bytespp:bytespp));
+		out.write((char *)(data+chunkstart), (bgra ? run_length*bytespp:bytespp));
 		if (!out.good()) {
 			std::cerr << "can't dump the tga file\n";
 			return false;
@@ -257,11 +254,19 @@ TGAColor TGAImage::get(int x, int y) {
 	return TGAColor(data + (x + y*width)*bytespp, bytespp);
 }
 
-bool TGAImage::set(int x, int y, TGAColor c) {
+bool TGAImage::set(int x, int y, TGAColor& c) {
 	if (!data || x < 0 || y < 0 || x >= width || y >= height) {
 		return false;
 	}
-	memcpy(data + (x + y*width)*bytespp, c.raw, bytespp);
+	memcpy(data + (x + y*width)*bytespp, c.bgra, bytespp);
+	return true;
+}
+
+bool TGAImage::set(int x, int y, const TGAColor& c) {
+	if (!data || x < 0 || y < 0 || x >= width || y >= height) {
+		return false;
+	}
+	memcpy(data + (x + y*width)*bytespp, c.bgra, bytespp);
 	return true;
 }
 
@@ -283,7 +288,7 @@ bool TGAImage::flip_horizontally() {
 	for (int i = 0; i < half; i++) {
 		for (int j = 0; j < height; j++) {
 			TGAColor c1 = get(i, j);			
-			TGAColor c2 = get(width-1, j);			
+			TGAColor c2 = get(width-1-i, j);			
 			set(i, j, c2);
 			set(width-1-i, j, c1);
 		}
@@ -351,7 +356,6 @@ bool TGAImage::scale(int w, int h) {
 	height = h;
 	return true;
 }
-
 
 
 

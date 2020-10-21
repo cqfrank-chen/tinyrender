@@ -17,9 +17,9 @@ private:
 template<typename T> struct vec<2, T> {
 	vec(): x(T()), y(T()) {}
 	vec(T X, T Y): x(X), y(Y) {}
-	template <class u> vec<2, T>(const vec<2, u> &v);
-	T& operator[](const size_t i) {assert(i < 2); return i == 0 ? x : y;}
-	const T& operator[](const size_t i) const {assert(i < 2); return i == 0 ? x : y;}
+	template <class U> vec<2, T>(const vec<2, U> &v);
+	T& operator[](const size_t i) {assert(i < 2); return i <= 0 ? x : y;}
+	const T& operator[](const size_t i) const {assert(i < 2); return i <= 0 ? x : y;}
 
 	T x, y;
 };
@@ -27,9 +27,9 @@ template<typename T> struct vec<2, T> {
 template<typename T> struct vec<3, T> {
 	vec(): x(T()), y(T()), z(T()) {}
 	vec(T X, T Y, T Z): x(X), y(Y), z(Z) {}
-	template <class u> vec<3, T>(const vec<3, u> &v);
-	T& operator[](const size_t i) {assert(i < 3); return i == 0 ? x : (i == 1 ? y : z);}
-	const T& operator[](const size_t i) const {assert(i < 3); return i == 0 ? x : (i == 1 ? y : z);}
+	template <class U> vec<3, T>(const vec<3, U> &v);
+	T& operator[](const size_t i) {assert(i < 3); return i <= 0 ? x : (i == 1 ? y : z);}
+	const T& operator[](const size_t i) const {assert(i < 3); return i <= 0 ? x : (i == 1 ? y : z);}
 	float norm() {return std::sqrt(x*x+y*y+z*z);}
 	vec<3, T>& normalize(T l=1) {*this = (*this)*(l/norm()); return *this; }
 
@@ -42,22 +42,22 @@ template<size_t DIM, typename T> T operator*(const vec<DIM, T>& lhs, const vec<D
 	return ret;
 }
 
-template<size_t DIM, typename T> vec<DIM,T> operator+(const vec<DIM, T> lhs, const vec<DIM, T>& rhs) {
+template<size_t DIM, typename T> vec<DIM,T> operator+(vec<DIM, T> lhs, const vec<DIM, T>& rhs) {
 	for (size_t i = DIM; i--; lhs[i] += rhs[i]);
 	return lhs;
 }
 
-template<size_t DIM, typename T> vec<DIM,T> operator-(const vec<DIM, T> lhs, const vec<DIM, T>& rhs) {
+template<size_t DIM, typename T> vec<DIM,T> operator-(vec<DIM, T> lhs, const vec<DIM, T>& rhs) {
 	for (size_t i = DIM; i--; lhs[i] -= rhs[i]);
 	return lhs;
 }
 
-template<size_t DIM, typename T, typename U> vec<DIM,T> operator*(const vec<DIM, T> lhs, const U& rhs) {
+template<size_t DIM, typename T, typename U> vec<DIM,T> operator*(vec<DIM, T> lhs, const U& rhs) {
 	for (size_t i = DIM; i--; lhs[i] *= rhs);
 	return lhs;
 }
 
-template<size_t DIM, typename T, typename U> vec<DIM,T> operator/(const vec<DIM, T> lhs, const U& rhs) {
+template<size_t DIM, typename T, typename U> vec<DIM,T> operator/(vec<DIM, T> lhs, const U& rhs) {
 	for (size_t i = DIM; i--; lhs[i] /= rhs);
 	return lhs;
 }
@@ -129,6 +129,7 @@ public:
 		mat<DimRows, DimCols, T> ret;
 		for (size_t i = DimRows; i--; )
 			for (size_t j = DimCols; j--; ret[i][j] = (i == j));
+		return ret;
 	}
 
 	T det() const {
@@ -143,7 +144,7 @@ public:
 	}
 
 	T cofactor(size_t row, size_t col) const {
-		return get_minor(row, col).det()*((row+col)&2 ? -1:1);
+		return get_minor(row, col).det()*((row+col)%2 ? -1:1);
 	}
 
 	mat<DimRows, DimCols, T> adjugate() const {
@@ -159,3 +160,38 @@ public:
 		return ret / tmp;
 	}
 };
+
+
+template<size_t DimRows, size_t DimCols, typename T> vec<DimRows, T> operator*(const mat<DimRows, DimCols, T>& lhs, const vec<DimCols, T>& rhs) {
+	vec<DimRows, T> ret;
+	for (size_t i = DimRows; i--; ret[i] = lhs[i]*rhs);
+	return ret;
+}
+
+template<size_t R1, size_t C1, size_t C2, typename T> mat<R1, C2, T> operator*(const mat<R1, C1, T>& lhs, const mat<C1, C2, T>& rhs) {
+	mat<R1, C2, T> ret;
+	for (size_t i = R1; i--; )
+		for (size_t j = C2; j--; ret[i][j] = lhs[i]*rhs.col(j));
+	return ret;
+}
+
+template<size_t DimRows, size_t DimCols, typename T> mat<DimCols, DimRows, T> operator/(mat<DimRows, DimCols, T> lhs, const T& rhs) {
+	for (size_t i = DimRows; i--; lhs[i] = lhs[i]/rhs);
+	return lhs;
+}
+
+template<size_t DimRows, size_t DimCols, class T> std::ostream& operator<<(std::ostream& out, mat<DimRows, DimCols, T>& m) {
+	for (size_t i = 0; i < DimRows; i++)
+		out << m[i] << std::endl;
+	return out;
+}
+
+typedef vec<2, float> Vec2f;
+typedef vec<2, int> Vec2i;
+typedef vec<3, float> Vec3f;
+typedef vec<3, int> Vec3i;
+typedef vec<4, float> Vec4f;
+typedef mat<4, 4, float> Matrix;
+
+
+#endif
