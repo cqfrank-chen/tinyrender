@@ -59,6 +59,7 @@ int main(int argc, char** argv) {
 	GouraudShader shader;
 	shader.uniform_M = Projection*ModelView;
 	shader.uniform_MIT = (Projection*ModelView).invert_transpose();
+
 	for (int i = 0; i < model->nfaces(); i++) {
 		Vec4f screen_coords[3];
 		for (int j = 0; j < 3; j++)
