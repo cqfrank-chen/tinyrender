@@ -1,0 +1,1003 @@
+The system is: Linux - 5.4.0-51-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d0a7/fast && /usr/bin/make -f CMakeFiles/cmTC_4d0a7.dir/build.make CMakeFiles/cmTC_4d0a7.dir/build
+make[1]: 进入目录“/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4d0a7.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4d0a7.dir/testCCompiler.c.o   -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_4d0a7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d0a7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4d0a7.dir/testCCompiler.c.o  -o cmTC_4d0a7 
+make[1]: 离开目录“/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp”
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f8866/fast && /usr/bin/make -f CMakeFiles/cmTC_f8866.dir/build.make CMakeFiles/cmTC_f8866.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccpLxia9.s
+GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o /tmp/ccpLxia9.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_f8866
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8866.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o  -o cmTC_f8866 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f8866' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuHO2YH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f8866 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f8866' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_f8866/fast && /usr/bin/make -f CMakeFiles/cmTC_f8866.dir/build.make CMakeFiles/cmTC_f8866.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccpLxia9.s]
+  ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: bbf13931d8de1abe14040c9909cb6969]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o /tmp/ccpLxia9.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_f8866]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8866.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o  -o cmTC_f8866 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f8866' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuHO2YH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f8866 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccuHO2YH.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f8866] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_f8866.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0fec5/fast && /usr/bin/make -f CMakeFiles/cmTC_0fec5.dir/build.make CMakeFiles/cmTC_0fec5.dir/build
+make[1]: 进入目录“/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_0fec5.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_0fec5.dir/testCXXCompiler.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_0fec5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fec5.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0fec5.dir/testCXXCompiler.cxx.o  -o cmTC_0fec5 
+make[1]: 离开目录“/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp”
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2f83/fast && /usr/bin/make -f CMakeFiles/cmTC_d2f83.dir/build.make CMakeFiles/cmTC_d2f83.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuVSWth.s
+GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuVSWth.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_d2f83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2f83.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d2f83 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d2f83' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHQHTUG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d2f83 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d2f83' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/9]
+    add: [/usr/include/x86_64-linux-gnu/c++/9]
+    add: [/usr/include/c++/9/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_d2f83/fast && /usr/bin/make -f CMakeFiles/cmTC_d2f83.dir/build.make CMakeFiles/cmTC_d2f83.dir/build]
+  ignore line: [make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuVSWth.s]
+  ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Ubuntu 9.3.0-17ubuntu1~20.04) version 9.3.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.3.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 466f818abe2f30ba03783f22bd12d815]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuVSWth.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_d2f83]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2f83.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d2f83 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.3.0-17ubuntu1~20.04' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-HskZEa/gcc-9-9.3.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d2f83' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHQHTUG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d2f83 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccHQHTUG.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d2f83] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_d2f83.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7c0d7/fast && /usr/bin/make -f CMakeFiles/cmTC_7c0d7.dir/build.make CMakeFiles/cmTC_7c0d7.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7c0d7.dir/src.cxx.o
+/usr/bin/c++    -Dflag_supported   -Wall -o CMakeFiles/cmTC_7c0d7.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7c0d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c0d7.dir/link.txt --verbose=1
+/usr/bin/c++   -Dflag_supported    -rdynamic CMakeFiles/cmTC_7c0d7.dir/src.cxx.o  -o cmTC_7c0d7 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4666a/fast && /usr/bin/make -f CMakeFiles/cmTC_4666a.dir/build.make CMakeFiles/cmTC_4666a.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4666a.dir/src.cxx.o
+/usr/bin/c++    -Wall -Dflag_supported   -Wextra -o CMakeFiles/cmTC_4666a.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4666a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4666a.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Dflag_supported    -rdynamic CMakeFiles/cmTC_4666a.dir/src.cxx.o  -o cmTC_4666a 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_33344/fast && /usr/bin/make -f CMakeFiles/cmTC_33344.dir/build.make CMakeFiles/cmTC_33344.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_33344.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -Dflag_supported   -pedantic -o CMakeFiles/cmTC_33344.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_33344
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33344.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -Dflag_supported    -rdynamic CMakeFiles/cmTC_33344.dir/src.cxx.o  -o cmTC_33344 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4a3a4/fast && /usr/bin/make -f CMakeFiles/cmTC_4a3a4.dir/build.make CMakeFiles/cmTC_4a3a4.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a3a4.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -Dflag_supported   -std=c++11 -o CMakeFiles/cmTC_4a3a4.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4a3a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a3a4.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -Dflag_supported    -rdynamic CMakeFiles/cmTC_4a3a4.dir/src.cxx.o  -o cmTC_4a3a4 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9b31b/fast && /usr/bin/make -f CMakeFiles/cmTC_9b31b.dir/build.make CMakeFiles/cmTC_9b31b.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9b31b.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -Dflag_supported   -O3 -o CMakeFiles/cmTC_9b31b.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9b31b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b31b.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -Dflag_supported    -rdynamic CMakeFiles/cmTC_9b31b.dir/src.cxx.o  -o cmTC_9b31b 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_83982/fast && /usr/bin/make -f CMakeFiles/cmTC_83982.dir/build.make CMakeFiles/cmTC_83982.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_83982.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported   -fopenmp -o CMakeFiles/cmTC_83982.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_83982
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83982.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported    -rdynamic CMakeFiles/cmTC_83982.dir/src.cxx.o  -o cmTC_83982 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ff31d/fast && /usr/bin/make -f CMakeFiles/cmTC_ff31d.dir/build.make CMakeFiles/cmTC_ff31d.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ff31d.dir/src.cxx.o
+/usr/bin/c++    -Dflag_supported   -Wall -o CMakeFiles/cmTC_ff31d.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ff31d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff31d.dir/link.txt --verbose=1
+/usr/bin/c++   -Dflag_supported    -rdynamic CMakeFiles/cmTC_ff31d.dir/src.cxx.o  -o cmTC_ff31d 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_19a37/fast && /usr/bin/make -f CMakeFiles/cmTC_19a37.dir/build.make CMakeFiles/cmTC_19a37.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_19a37.dir/src.cxx.o
+/usr/bin/c++    -Wall -Dflag_supported   -Wextra -o CMakeFiles/cmTC_19a37.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_19a37
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19a37.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Dflag_supported    -rdynamic CMakeFiles/cmTC_19a37.dir/src.cxx.o  -o cmTC_19a37 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b0534/fast && /usr/bin/make -f CMakeFiles/cmTC_b0534.dir/build.make CMakeFiles/cmTC_b0534.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b0534.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -Dflag_supported   -pedantic -o CMakeFiles/cmTC_b0534.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b0534
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0534.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -Dflag_supported    -rdynamic CMakeFiles/cmTC_b0534.dir/src.cxx.o  -o cmTC_b0534 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0274e/fast && /usr/bin/make -f CMakeFiles/cmTC_0274e.dir/build.make CMakeFiles/cmTC_0274e.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0274e.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -Dflag_supported   -std=c++11 -o CMakeFiles/cmTC_0274e.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0274e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0274e.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -Dflag_supported    -rdynamic CMakeFiles/cmTC_0274e.dir/src.cxx.o  -o cmTC_0274e 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4592d/fast && /usr/bin/make -f CMakeFiles/cmTC_4592d.dir/build.make CMakeFiles/cmTC_4592d.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4592d.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -Dflag_supported   -O3 -o CMakeFiles/cmTC_4592d.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4592d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4592d.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -Dflag_supported    -rdynamic CMakeFiles/cmTC_4592d.dir/src.cxx.o  -o cmTC_4592d 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_61157/fast && /usr/bin/make -f CMakeFiles/cmTC_61157.dir/build.make CMakeFiles/cmTC_61157.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_61157.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported   -fopenmp -o CMakeFiles/cmTC_61157.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_61157
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61157.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported    -rdynamic CMakeFiles/cmTC_61157.dir/src.cxx.o  -o cmTC_61157 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_21ad0/fast && /usr/bin/make -f CMakeFiles/cmTC_21ad0.dir/build.make CMakeFiles/cmTC_21ad0.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21ad0.dir/src.cxx.o
+/usr/bin/c++    -Dflag_supported   -Wall -o CMakeFiles/cmTC_21ad0.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_21ad0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21ad0.dir/link.txt --verbose=1
+/usr/bin/c++   -Dflag_supported    -rdynamic CMakeFiles/cmTC_21ad0.dir/src.cxx.o  -o cmTC_21ad0 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ad871/fast && /usr/bin/make -f CMakeFiles/cmTC_ad871.dir/build.make CMakeFiles/cmTC_ad871.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ad871.dir/src.cxx.o
+/usr/bin/c++    -Wall -Dflag_supported   -Wextra -o CMakeFiles/cmTC_ad871.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ad871
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad871.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Dflag_supported    -rdynamic CMakeFiles/cmTC_ad871.dir/src.cxx.o  -o cmTC_ad871 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_56e7f/fast && /usr/bin/make -f CMakeFiles/cmTC_56e7f.dir/build.make CMakeFiles/cmTC_56e7f.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56e7f.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -Dflag_supported   -pedantic -o CMakeFiles/cmTC_56e7f.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_56e7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56e7f.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -Dflag_supported    -rdynamic CMakeFiles/cmTC_56e7f.dir/src.cxx.o  -o cmTC_56e7f 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_370e2/fast && /usr/bin/make -f CMakeFiles/cmTC_370e2.dir/build.make CMakeFiles/cmTC_370e2.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_370e2.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -Dflag_supported   -std=c++11 -o CMakeFiles/cmTC_370e2.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_370e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_370e2.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -Dflag_supported    -rdynamic CMakeFiles/cmTC_370e2.dir/src.cxx.o  -o cmTC_370e2 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4481c/fast && /usr/bin/make -f CMakeFiles/cmTC_4481c.dir/build.make CMakeFiles/cmTC_4481c.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4481c.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -Dflag_supported   -O3 -o CMakeFiles/cmTC_4481c.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4481c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4481c.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -Dflag_supported    -rdynamic CMakeFiles/cmTC_4481c.dir/src.cxx.o  -o cmTC_4481c 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e80ec/fast && /usr/bin/make -f CMakeFiles/cmTC_e80ec.dir/build.make CMakeFiles/cmTC_e80ec.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e80ec.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported   -fopenmp -o CMakeFiles/cmTC_e80ec.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e80ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e80ec.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported    -rdynamic CMakeFiles/cmTC_e80ec.dir/src.cxx.o  -o cmTC_e80ec 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6a1ce/fast && /usr/bin/make -f CMakeFiles/cmTC_6a1ce.dir/build.make CMakeFiles/cmTC_6a1ce.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a1ce.dir/src.cxx.o
+/usr/bin/c++    -Dflag_supported   -Wall -o CMakeFiles/cmTC_6a1ce.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6a1ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a1ce.dir/link.txt --verbose=1
+/usr/bin/c++   -Dflag_supported    -rdynamic CMakeFiles/cmTC_6a1ce.dir/src.cxx.o  -o cmTC_6a1ce 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9748e/fast && /usr/bin/make -f CMakeFiles/cmTC_9748e.dir/build.make CMakeFiles/cmTC_9748e.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9748e.dir/src.cxx.o
+/usr/bin/c++    -Wall -Dflag_supported   -Wextra -o CMakeFiles/cmTC_9748e.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9748e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9748e.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Dflag_supported    -rdynamic CMakeFiles/cmTC_9748e.dir/src.cxx.o  -o cmTC_9748e 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2155f/fast && /usr/bin/make -f CMakeFiles/cmTC_2155f.dir/build.make CMakeFiles/cmTC_2155f.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2155f.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -Dflag_supported   -pedantic -o CMakeFiles/cmTC_2155f.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2155f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2155f.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -Dflag_supported    -rdynamic CMakeFiles/cmTC_2155f.dir/src.cxx.o  -o cmTC_2155f 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_56602/fast && /usr/bin/make -f CMakeFiles/cmTC_56602.dir/build.make CMakeFiles/cmTC_56602.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56602.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -Dflag_supported   -std=c++11 -o CMakeFiles/cmTC_56602.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_56602
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56602.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -Dflag_supported    -rdynamic CMakeFiles/cmTC_56602.dir/src.cxx.o  -o cmTC_56602 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8000f/fast && /usr/bin/make -f CMakeFiles/cmTC_8000f.dir/build.make CMakeFiles/cmTC_8000f.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8000f.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -Dflag_supported   -O3 -o CMakeFiles/cmTC_8000f.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8000f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8000f.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -Dflag_supported    -rdynamic CMakeFiles/cmTC_8000f.dir/src.cxx.o  -o cmTC_8000f 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_545bd/fast && /usr/bin/make -f CMakeFiles/cmTC_545bd.dir/build.make CMakeFiles/cmTC_545bd.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_545bd.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported   -fopenmp -o CMakeFiles/cmTC_545bd.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_545bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_545bd.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported    -rdynamic CMakeFiles/cmTC_545bd.dir/src.cxx.o  -o cmTC_545bd 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_777b9/fast && /usr/bin/make -f CMakeFiles/cmTC_777b9.dir/build.make CMakeFiles/cmTC_777b9.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_777b9.dir/src.cxx.o
+/usr/bin/c++    -Dflag_supported   -Wall -o CMakeFiles/cmTC_777b9.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_777b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_777b9.dir/link.txt --verbose=1
+/usr/bin/c++   -Dflag_supported    -rdynamic CMakeFiles/cmTC_777b9.dir/src.cxx.o  -o cmTC_777b9 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_48d69/fast && /usr/bin/make -f CMakeFiles/cmTC_48d69.dir/build.make CMakeFiles/cmTC_48d69.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_48d69.dir/src.cxx.o
+/usr/bin/c++    -Wall -Dflag_supported   -Wextra -o CMakeFiles/cmTC_48d69.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_48d69
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48d69.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Dflag_supported    -rdynamic CMakeFiles/cmTC_48d69.dir/src.cxx.o  -o cmTC_48d69 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f9101/fast && /usr/bin/make -f CMakeFiles/cmTC_f9101.dir/build.make CMakeFiles/cmTC_f9101.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f9101.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -Dflag_supported   -pedantic -o CMakeFiles/cmTC_f9101.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f9101
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9101.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -Dflag_supported    -rdynamic CMakeFiles/cmTC_f9101.dir/src.cxx.o  -o cmTC_f9101 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a66f0/fast && /usr/bin/make -f CMakeFiles/cmTC_a66f0.dir/build.make CMakeFiles/cmTC_a66f0.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a66f0.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -Dflag_supported   -std=c++11 -o CMakeFiles/cmTC_a66f0.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a66f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a66f0.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -Dflag_supported    -rdynamic CMakeFiles/cmTC_a66f0.dir/src.cxx.o  -o cmTC_a66f0 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_205d9/fast && /usr/bin/make -f CMakeFiles/cmTC_205d9.dir/build.make CMakeFiles/cmTC_205d9.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_205d9.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -Dflag_supported   -O3 -o CMakeFiles/cmTC_205d9.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_205d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_205d9.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -Dflag_supported    -rdynamic CMakeFiles/cmTC_205d9.dir/src.cxx.o  -o cmTC_205d9 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_31198/fast && /usr/bin/make -f CMakeFiles/cmTC_31198.dir/build.make CMakeFiles/cmTC_31198.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31198.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported   -fopenmp -o CMakeFiles/cmTC_31198.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_31198
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31198.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported    -rdynamic CMakeFiles/cmTC_31198.dir/src.cxx.o  -o cmTC_31198 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ddc95/fast && /usr/bin/make -f CMakeFiles/cmTC_ddc95.dir/build.make CMakeFiles/cmTC_ddc95.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ddc95.dir/src.cxx.o
+/usr/bin/c++    -Dflag_supported   -Wall -o CMakeFiles/cmTC_ddc95.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ddc95
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddc95.dir/link.txt --verbose=1
+/usr/bin/c++   -Dflag_supported    -rdynamic CMakeFiles/cmTC_ddc95.dir/src.cxx.o  -o cmTC_ddc95 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7542f/fast && /usr/bin/make -f CMakeFiles/cmTC_7542f.dir/build.make CMakeFiles/cmTC_7542f.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7542f.dir/src.cxx.o
+/usr/bin/c++    -Wall -Dflag_supported   -Wextra -o CMakeFiles/cmTC_7542f.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7542f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7542f.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Dflag_supported    -rdynamic CMakeFiles/cmTC_7542f.dir/src.cxx.o  -o cmTC_7542f 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fe470/fast && /usr/bin/make -f CMakeFiles/cmTC_fe470.dir/build.make CMakeFiles/cmTC_fe470.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fe470.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -Dflag_supported   -pedantic -o CMakeFiles/cmTC_fe470.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fe470
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe470.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -Dflag_supported    -rdynamic CMakeFiles/cmTC_fe470.dir/src.cxx.o  -o cmTC_fe470 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_49bc8/fast && /usr/bin/make -f CMakeFiles/cmTC_49bc8.dir/build.make CMakeFiles/cmTC_49bc8.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_49bc8.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -Dflag_supported   -std=c++11 -o CMakeFiles/cmTC_49bc8.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_49bc8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49bc8.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -Dflag_supported    -rdynamic CMakeFiles/cmTC_49bc8.dir/src.cxx.o  -o cmTC_49bc8 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3ed17/fast && /usr/bin/make -f CMakeFiles/cmTC_3ed17.dir/build.make CMakeFiles/cmTC_3ed17.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3ed17.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -Dflag_supported   -O3 -o CMakeFiles/cmTC_3ed17.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3ed17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ed17.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -Dflag_supported    -rdynamic CMakeFiles/cmTC_3ed17.dir/src.cxx.o  -o cmTC_3ed17 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_72a2f/fast && /usr/bin/make -f CMakeFiles/cmTC_72a2f.dir/build.make CMakeFiles/cmTC_72a2f.dir/build
+make[1]: Entering directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_72a2f.dir/src.cxx.o
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported   -fopenmp -o CMakeFiles/cmTC_72a2f.dir/src.cxx.o -c /home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_72a2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72a2f.dir/link.txt --verbose=1
+/usr/bin/c++   -Wall -Wextra -pedantic -std=c++11 -O3 -Dflag_supported    -rdynamic CMakeFiles/cmTC_72a2f.dir/src.cxx.o  -o cmTC_72a2f 
+make[1]: Leaving directory '/home/cqfrank/Graphics/tinyrenderer/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

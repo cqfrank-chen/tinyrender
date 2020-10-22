@@ -10,15 +10,17 @@ Model* model = NULL;
 const int width = 800;
 const int height = 800;
 
-Vec3f light_dir(1, 3, 1);
-Vec3f eye(0, 0, 3);
+Vec3f light_dir(1, 1, 1);
+Vec3f eye(1, 1, 3);
 Vec3f center(0, 0, 0);
 Vec3f up(0, 1, 0);
 
 struct GouraudShader: public IShader {
 	Vec3f varying_intensity;
+	mat<2, 3, float> varying_uv;
 
 	virtual Vec4f vertex(int iface, int nthvert) {
+		varying_uv.set_col(nthvert, model->uv(iface, nthvert));
 		Vec4f gl_Vertex = embed<4>(model->vert(iface, nthvert));
 		gl_Vertex = Viewport*Projection*ModelView*gl_Vertex;
 		varying_intensity[nthvert] = std::max(0.f, model->normal(iface, nthvert)*light_dir);
@@ -27,7 +29,16 @@ struct GouraudShader: public IShader {
 
 	virtual bool fragment(Vec3f bar, TGAColor& color) {
 		float intensity = varying_intensity*bar;
-		color = TGAColor(255, 255, 255)*intensity;
+		/* 
+		if (intensity > 0.85) intensity = 1;
+		else if (intensity > 0.60) intensity = 0.80;
+		else if (intensity > 0.45) intensity = 0.60;
+		else if (intensity > 0.30) intensity = 0.45;
+		else if (intensity > 0.15) intensity = 0.30;
+		else intensity = 0;
+		*/
+		Vec2f uv = varying_uv*bar;
+		color = model->diffuse(uv)*intensity;
 		return false;
 	}
 };
